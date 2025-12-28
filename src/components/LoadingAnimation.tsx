@@ -27,7 +27,7 @@ export const LoadingAnimation = () => {
           transition={{ duration: 1, ease: "easeInOut" }}
           className="text-8xl font-bold mb-4 glow-text-cyan"
         >
-          SAB
+          S Venkat
         </motion.div>
         <motion.div
           initial={{ width: 0 }}

@@ -26,7 +26,7 @@ import { FloatingNav } from "@/components/FloatingNav";
 import { LoadingAnimation } from "@/components/LoadingAnimation";
 import { ProjectCard } from "@/components/ProjectCard";
 import projectFoodApp from "@/assets/project-food-app.jpg";
-import projectPortfolio from "@/assets/project-portfolio.jpg";
+import projectFakeNews from "@/assets/project-weather.jpg";
 import projectFaceDetection from "@/assets/project-face-detection.jpg";
 import projectEcommerce from "@/assets/project-ecommerce.jpg";
 
@@ -58,10 +58,10 @@ const Index = () => {
       githubLink: "#",
     },
     {
-      title: "Portfolio Website",
-      description: "Personal portfolio website showcasing projects and skills with modern design and smooth animations.",
-      tech: ["Next.js", "TailwindCSS", "Framer Motion"],
-      image: projectPortfolio,
+      title: "Real-time Fake News Detection",
+      description: "ML-powered system for detecting and classifying fake news using advanced NLP techniques and machine learning algorithms with real-time analysis capabilities.",
+      tech: ["Python", "TensorFlow", "scikit-learn"],
+      image: projectFakeNews,
       liveLink: "#",
       githubLink: "#",
     },
@@ -72,25 +72,11 @@ const Index = () => {
       image: projectFaceDetection,
       liveLink: "#",
       githubLink: "#",
-    },
-    {
-      title: "E-Commerce Platform",
-      description: "Full-featured e-commerce platform with product management, shopping cart, and secure payment integration.",
-      tech: ["React", "Node.js", "MongoDB"],
-      image: projectEcommerce,
-      liveLink: "#",
-      githubLink: "#",
-    },
+    }
   ];
 
   const experiences = [
-    {
-      company: "Vyuha Innovation Foundation",
-      role: "Frontend Developer Intern",
-      duration: "2025",
-      icon: Briefcase,
-      color: "neon-cyan",
-    },
+  
     {
       company: "Oasis Infobyte",
       role: "Web Developer Intern",
@@ -108,15 +94,15 @@ const Index = () => {
   ];
 
   const skills = [
-    { name: "HTML5", icon: Code2, category: "Frontend", level: 95 },
-    { name: "CSS3", icon: Palette, category: "Frontend", level: 92 },
-    { name: "JavaScript", icon: Code2, category: "Frontend", level: 90 },
-    { name: "React", icon: Layout, category: "Frontend", level: 88 },
-    { name: "Next.js", icon: Layout, category: "Frontend", level: 85 },
-    { name: "TailwindCSS", icon: Palette, category: "Styling", level: 90 },
-    { name: "Framer Motion", icon: Layout, category: "Styling", level: 82 },
+    { name: "Python", icon: Code2, category: "Programming", level: 90},
+    { name: "Machine Learning", icon: Database, category: "ML/AI", level: 80 },
+    { name: "Deep Learning", icon: Code2, category: "ML/AI", level: 80 },
+    { name: "TensorFlow", icon: Layout, category: "ML Framework", level: 70 },
+    { name: "scikit-learn", icon: Layout, category: "ML Framework", level: 70 },
+    { name: "OpenCV", icon: Palette, category: "Computer Vision", level: 70},
+    { name: "Pandas & NumPy", icon: Database, category: "Data Processing", level: 80 },
+    { name: "SQL", icon: Database, category: "Databases", level: 85 },
     { name: "Git & GitHub", icon: GitBranch, category: "Tools", level: 87 },
-    { name: "Firebase", icon: Database, category: "Tools", level: 80 },
   ];
 
   return (
@@ -152,7 +138,7 @@ const Index = () => {
                 transition={{ delay: 0.5, type: "spring" }}
                 className="text-5xl md:text-7xl lg:text-8xl font-bold mb-6 glow-text-cyan"
               >
-                Shaik Arshad Basha
+                Suda Venkat
               </motion.h1>
               <motion.p
                 initial={{ opacity: 0 }}
@@ -160,20 +146,20 @@ const Index = () => {
                 transition={{ delay: 0.7 }}
                 className="text-2xl md:text-3xl mb-6 font-medium text-secondary"
               >
-                Frontend Developer
+                ML Developer
               </motion.p>
               <div className="h-16 mb-12">
                 <TypeAnimation
                   sequence={[
-                    "React.js",
+                    "Python",
                     2000,
                     "Next.js",
                     2000,
-                    "TailwindCSS",
+                    "Open CV",
                     2000,
-                    "JavaScript",
+                    "DL",
                     2000,
-                    "TypeScript",
+                    "Scikit Learn",
                     2000,
                   ]}
                   wrapper="p"
@@ -252,17 +238,17 @@ const Index = () => {
                   className="space-y-6"
                 >
                   <p className="text-lg text-muted-foreground leading-relaxed">
-                    I'm a passionate <span className="text-primary font-semibold">Frontend Developer</span> with
-                    expertise in crafting beautiful, performant, and user-centric web applications. I transform ideas
-                    into engaging digital experiences using cutting-edge technologies.
+                    I'm a passionate <span className="text-primary font-semibold">Machine Learning Developer</span> with
+                    expertise in building intelligent systems, deep learning models, and AI solutions. I transform complex
+                    data into actionable insights and create impactful solutions using cutting-edge ML technologies.
                   </p>
                   <p className="text-lg text-muted-foreground leading-relaxed">
-                    My journey in web development started with curiosity and evolved into a deep passion for creating
-                    exceptional user interfaces. I constantly learn and adapt to the latest technologies and best
-                    practices in the ever-evolving web ecosystem.
+                    My journey in machine learning started with a curiosity about data science and evolved into a deep passion for developing
+                    advanced AI models and algorithms. I constantly learn and adapt to the latest techniques and best
+                    practices in the fast-evolving field of artificial intelligence and machine learning.
                   </p>
                   <div className="flex flex-wrap gap-3 pt-4">
-                    {["React", "Next.js", "TypeScript", "TailwindCSS", "JavaScript", "HTML5"].map((tech) => (
+                    {["Python", "TensorFlow", "PyTorch", "scikit-learn", "OpenCV", "NLP"].map((tech) => (
                       <motion.span
                         key={tech}
                         whileHover={{ scale: 1.1, rotate: 5 }}
@@ -540,7 +526,7 @@ const Index = () => {
                 viewport={{ once: true }}
                 className="text-sm text-muted-foreground"
               >
-                © 2024 Shaik Arshad Basha. All rights reserved.
+                © 2024 Suda Venkat. All rights reserved.
               </motion.p>
               <div className="flex gap-6">
                 {["About", "Projects", "Skills", "Contact"].map((item, index) => (
